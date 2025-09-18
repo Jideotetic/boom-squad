@@ -30,7 +30,11 @@ function Header() {
 				</ul>
 			</nav>
 
-			<Button size="lg" variant="secondary">
+			<Button
+				size="lg"
+				className="bg-[#FDDA24] text-[#060708]"
+				variant="secondary"
+			>
 				Connect Wallet
 			</Button>
 

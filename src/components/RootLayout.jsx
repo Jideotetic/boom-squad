@@ -1,5 +1,6 @@
 import { Outlet } from "react-router";
 import Header from "./Header";
+import Footer from "./Footer";
 
 function RootLayout() {
 	return (
@@ -12,7 +13,9 @@ function RootLayout() {
 				<Outlet />
 			</main>
 
-			{/* <Footer /> */}
+			<div className="bg-[#0B0F15] px-5 py-10">
+				<Footer />
+			</div>
 		</>
 	);
 }
