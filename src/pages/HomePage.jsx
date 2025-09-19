@@ -8,6 +8,109 @@ function HomePage() {
 			<div className="bg-white">
 				<div className="mx-auto flex w-full max-w-[1200px] flex-col gap-12 lg:flex-row px-5 py-10 pb-10 md:py-[104px] lg:gap-20 lg:px-10">
 					<img
+						className="mx-auto h-auto w-full sm:w-1/2 lg:order-1 order-2"
+						src="/Group 324.svg"
+						alt=""
+					/>
+
+					<div className="flex items-center lg:max-w-[520px] lg:order-2">
+						<div className="space-y-6 text-[#393F48]">
+							<h2 className="text-[30px] font-bold text-[#0B0F15] md:text-[40px]">
+								BoomSquad Lore
+							</h2>
+
+							<p className="text-[18px] font-normal md:text-[20px]">
+								BoomSquad (BOOM) is a community-driven token on Stellar Soroban
+								designed to reward participation, enhance engagement, and secure
+								long-term sustainability.
+							</p>
+
+							<p className="text-[18px] font-normal md:text-[20px]">
+								Unlike traditional tokens, BOOM integrates real-time DEX
+								pricing, auto-liquidity, burn-to-earn incentives, and community
+								voting. The result is a token economy where value grows with the
+								community and trust is locked in liquidity forever.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div className="bg-white">
+				<div className="mx-auto space-y-8  w-full max-w-[1200px] px-5 py-10 pb-10 md:py-[104px] lg:gap-20 lg:px-10 border border-red-500">
+					<div className="border max-w-[544px]">
+						<span className="text-[#393F48] md:text-[24px] font-normal">
+							Core Features
+						</span>
+						<h2 className="text-[30px] md:text-[40px] text-[#0B0F15] font-bold">
+							The BOOM Engine
+						</h2>
+					</div>
+
+					<div className="flex gap-8">
+						<div className="space-y-8 max-w-[544px] w-full mx-auto">
+							<div>
+								<img src="/Frame 327.svg" alt="" />
+								<div className="space-y-4 rounded-[4px] bg-[#FFFADA] p-10">
+									<h3>Dynamic Minting Linked to DEX</h3>
+									<p>
+										BOOM can be minted continuously until the fixed supply cap
+										is reached, ensuring scarcity and long-term value
+										preservation. Each mint price is automatically pegged to the
+										real-time BOOM/XLM exchange rate on the Stellar DEX.
+									</p>
+								</div>
+							</div>
+
+							<div>
+								<img src="/Frame 329.svg" alt="" />
+								<div className="space-y-4 rounded-[4px] bg-[#FFFADA] p-10">
+									<h3>Community Governance</h3>
+									<p>
+										BOOM doubles as voting power, giving holders a direct voice
+										in the ecosystem. From treasury spending, protocol upgrades,
+										community campaigns and even proposals can be created by any
+										holder with a minimum stake.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div className="space-y-8 max-w-[544px] w-full mx-auto">
+							<div>
+								<img src="/Frame 327 (1).svg" alt="" />
+								<div className="space-y-4 rounded-[4px] bg-[#FFFADA] p-10">
+									<h3>Burn Now, Flex Later</h3>
+									<p>
+										You can voluntarily burn BOOM tokens into a smart contract
+										vault and after a fixed vesting period, reclaim them with
+										bonus rewards which increases scarcity and incentivizes
+										loyalty by rewarding long-term holders.
+									</p>
+								</div>
+							</div>
+
+							<div>
+								<img className="h-auto" src="/Frame 329.svg" alt="" />
+								<div className="space-y-4 rounded-[4px] bg-[#FFFADA] p-10">
+									<h3>Real-Time Liquidity & Security</h3>
+									<p>
+										Every mint automatically adds liquidity to the BOOM/XLM
+										pool, with LP tokens permanently burned so liquidity can
+										never be withdrawn which guarantees a fair trading
+										environment, rug-pull risk elimination and a trustless DEX
+										listing.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div className="bg-white">
+				<div className="mx-auto flex w-full max-w-[1200px] flex-col gap-12 lg:flex-row px-5 py-10 pb-10 md:py-[104px] lg:gap-20 lg:px-10">
+					<img
 						className="mx-auto h-auto w-full sm:w-1/2 lg:order-1 order-2 lg:w-full"
 						src="/Group 324.svg"
 						alt=""
@@ -37,53 +140,44 @@ function HomePage() {
 			</div>
 
 			<div className="bg-white">
-				<div className="mx-auto w-full max-w-[1200px] px-5 py-10 pb-10 md:py-[104px] lg:gap-20 lg:px-10 border">
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
+				<div className="mx-auto flex w-full max-w-[1200px] flex-col gap-6 md:flex-row px-5 py-10 pb-10 md:py-[104px] lg:gap-20 lg:px-10">
+					<img
+						className="mx-auto md:mx-0 h-auto w-full border sm:w-1/2 md:order-1 order-2"
+						src="/Group 307.svg"
+						alt=""
+					/>
+
+					<div className="flex items-center lg:max-w-[520px] border md:order-2">
+						<div className="space-y-6 text-[#393F48]">
+							<h2 className="text-[30px] font-bold text-[#0B0F15] md:text-[40px]">
+								Tokenomics
+							</h2>
+
+							<div className="space-y-2">
+								<div className="p-6 rounded-[4px] bg-[#FFFBE6] space-y-2">
+									<div></div>
+								</div>
+								<div></div>
+								<div></div>
+								<div></div>
+							</div>
+
+							{/* <p className="text-[18px] font-normal md:text-[20px]">
+								BoomSquad (BOOM) is a community-driven token on Stellar Soroban
+								designed to reward participation, enhance engagement, and secure
+								long-term sustainability.
+							</p>
+
+							<p className="text-[18px] font-normal md:text-[20px]">
+								Unlike traditional tokens, BOOM integrates real-time DEX
+								pricing, auto-liquidity, burn-to-earn incentives, and community
+								voting. The result is a token economy where value grows with the
+								community and trust is locked in liquidity forever.
+							</p> */}
+						</div>
+					</div>
 				</div>
 			</div>
-			{/* 
-
-			<Metrics />
-
-			<About />
-
-			<ExploreTask />
-
-			<div className="mx-auto flex w-full max-w-[1200px] flex-col gap-12 bg-white px-5 py-10 pb-10 md:py-[104px] lg:flex-row lg:gap-20 lg:px-10">
-				<div className="flex flex-col gap-6 lg:order-2 lg:max-w-[576px]">
-					<div className="lg-text-[24px] w-fit rounded-[58px] bg-[#E2F1FE] px-8 py-2 text-[20px] font-light text-[#1082E4] lg:px-8 lg:py-3">
-						Create, Work & Earn
-					</div>
-
-					<div className="space-y-8 text-[#050215]">
-						<h2 className="text-[30px] font-extrabold md:text-[40px]">
-							Build, Contribute and Get Rewarded
-						</h2>
-
-						<p className="text-[18px] font-light md:text-[20px]">
-							Discover communities, take on meaningful quests, and track your
-							growth with AI-powered insights and Git-based contribution
-							tracking and earn while at it. Contribute.fi helps your
-							collaborate with other brilliant minds without friction.
-						</p>
-					</div>
-
-					<AuthButtons />
-				</div>
-
-				<img
-					className="mx-auto h-auto w-full bg-radial from-blue-100 from-40% to-white sm:w-1/2 lg:order-1 lg:w-full"
-					src="/Blue Harmony and Balance 1.svg"
-					alt=""
-				/>
-			</div>
-
-			<FeaturedCommunities />
-
-			<Testimonial /> */}
 		</>
 	);
 }

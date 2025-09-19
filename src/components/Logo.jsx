@@ -1,15 +1,10 @@
-import { Link, useNavigate } from "react-router";
+import { Link } from "react-router";
 
 function Logo() {
-	const navigate = useNavigate();
-
 	return (
 		<Link
-			href="/"
-			onClick={(e) => {
-				e.preventDefault();
-
-				navigate("/");
+			to="/"
+			onClick={() => {
 				window.scrollTo({
 					top: 0,
 				});

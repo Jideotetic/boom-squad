@@ -2,9 +2,11 @@ import { NAV_LINKS } from "@/lib/constants";
 import Logo from "./Logo";
 import { NavLink } from "react-router";
 import { Button } from "./ui/button";
+import { useState } from "react";
+import MobileNavigation from "./MobileNavigation";
 
 function Header() {
-	// const [sheetIsOpen, setSheetIsOpen] = useState(false);
+	const [sheetIsOpen, setSheetIsOpen] = useState(false);
 
 	return (
 		<header className="mx-auto flex w-full max-w-[1120px] items-center justify-between">
@@ -32,23 +34,22 @@ function Header() {
 
 			<Button
 				size="lg"
-				className="bg-[#FDDA24] text-[#060708]"
+				className="bg-[#FDDA24] text-[#060708] hidden md:block"
 				variant="secondary"
 			>
 				Connect Wallet
 			</Button>
 
 			{/* MOBILE NAV */}
-			{/* <MobileNavigation
+			<MobileNavigation
 				side="right"
 				sheetIsOpen={sheetIsOpen}
 				setSheetIsOpen={setSheetIsOpen}
-				tag="home-page"
 			>
-				<div className="flex min-h-1/2 flex-col items-center justify-center gap-14 px-4 pt-24">
+				<div className="flex min-h-1/2 flex-col items-center justify-center gap-14 px-4 pt-10">
 					<nav>
-						<ul className="flex flex-col items-center gap-6">
-							{LANDING_NAV_LINKS.map((link) => (
+						<ul className="flex flex-col items-center gap-10">
+							{NAV_LINKS.map((link) => (
 								<li key={link.title}>
 									{link.title === "Testimonials" ? (
 										<a
@@ -62,8 +63,8 @@ function Header() {
 										<NavLink
 											className={({ isActive }) =>
 												isActive
-													? "font-extrabold text-[#2F0FD1] hover:underline"
-													: "text-[#0D0516] hover:text-[#2F0FD1] hover:underline"
+													? "font-extrabold text-[#EAC506] hover:underline"
+													: "text-[#262400] hover:text-[#EAC506] hover:underline"
 											}
 											to={link.href}
 											onClick={() => setSheetIsOpen(false)}
@@ -76,9 +77,15 @@ function Header() {
 						</ul>
 					</nav>
 
-					<AuthButtons device="mobile" />
+					<Button
+						size="lg"
+						className="bg-[#FDDA24] text-[#060708] w-full"
+						variant="secondary"
+					>
+						Connect Wallet
+					</Button>
 				</div>
-			</MobileNavigation> */}
+			</MobileNavigation>
 		</header>
 	);
 }
