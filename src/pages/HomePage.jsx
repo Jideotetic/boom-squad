@@ -173,20 +173,64 @@ function HomePage() {
 						className="bg-[#FDDA24] text-[#060708] mx-auto block"
 						variant="secondary"
 					>
-						Mint Boom
+						Mint BOOM
 					</Button>
 				</div>
 			</div>
 
 			<div className="bg-white">
-				<div className="mx-auto flex w-full max-w-[1200px] flex-col gap-6 md:flex-row px-5 py-10 pb-10 md:py-[104px] lg:gap-20 lg:px-10">
+				<div className="mx-auto flex w-full max-w-[1200px] flex-col gap-6 md:flex-row px-5 py-10 pb-10 md:py-[104px] lg:px-10">
+					<div className="md:mx-0 w-full sm:w-1/2 space-y-5 mx-auto md:flex-1 md:order-2">
+						<h2 className="text-[30px] font-bold text-[#0B0F15] md:text-[40px]">
+							Tokenomics
+						</h2>
+
+						<div className="p-6 rounded-[4px] bg-[#FFFBE6] space-y-2">
+							<div className="text-[18px] text-[#E1BD00] font-medium">
+								Total Supply Cap
+							</div>
+							<div className="text-[#0B0F15] font-medium text-[18px]">
+								1,000,000,000 BOOM
+							</div>
+						</div>
+
+						<div className="p-6 rounded-[4px] bg-[#FFFBE6] space-y-2">
+							<div className="text-[18px] text-[#E1BD00] font-medium">
+								Minting Model
+							</div>
+							<ul className="text-[#0B0F15] font-medium text-[18px] list-disc pl-4">
+								<li>60% - Liquidity Pool (LP)</li>
+								<li>30% - Treasury</li>
+								<li>10% - Development Fund</li>
+							</ul>
+						</div>
+
+						<div className="p-6 rounded-[4px] bg-[#FFFBE6] space-y-2">
+							<div className="text-[18px] text-[#E1BD00] font-medium">
+								Liquidity
+							</div>
+							<div className="text-[#0B0F15] font-medium text-[18px]">
+								Auto-locked forever, no withdrawals
+							</div>
+						</div>
+
+						<div className="p-6 rounded-[4px] bg-[#FFFBE6] space-y-2">
+							<div className="text-[18px] text-[#E1BD00] font-medium">
+								Distribution
+							</div>
+							<div className="text-[#0B0F15] font-medium text-[18px]">
+								Transparent and community-first
+							</div>
+						</div>
+					</div>
+
 					<img
-						className="mx-auto md:mx-0 h-auto w-full border sm:w-1/2 md:order-1 order-2"
+						className="mx-auto md:mx-0 h-auto w-full sm:w-1/2"
 						src="/Group 307.svg"
 						alt=""
 					/>
 
-					<div className="flex items-center lg:max-w-[520px] border md:order-2">
+					{/* <div className="flex items-center lg:max-w-[520px] border md:order-2">
 						<div className="space-y-6 text-[#393F48]">
 							<h2 className="text-[30px] font-bold text-[#0B0F15] md:text-[40px]">
 								Tokenomics
@@ -200,21 +244,8 @@ function HomePage() {
 								<div></div>
 								<div></div>
 							</div>
-
-							{/* <p className="text-[18px] font-normal md:text-[20px]">
-								BoomSquad (BOOM) is a community-driven token on Stellar Soroban
-								designed to reward participation, enhance engagement, and secure
-								long-term sustainability.
-							</p>
-
-							<p className="text-[18px] font-normal md:text-[20px]">
-								Unlike traditional tokens, BOOM integrates real-time DEX
-								pricing, auto-liquidity, burn-to-earn incentives, and community
-								voting. The result is a token economy where value grows with the
-								community and trust is locked in liquidity forever.
-							</p> */}
 						</div>
-					</div>
+					</div> */}
 				</div>
 			</div>
 		</>
