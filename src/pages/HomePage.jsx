@@ -6,16 +6,16 @@ function HomePage() {
 			<Hero />
 
 			<div className="bg-white">
-				<div className="mx-auto flex w-full max-w-[1200px] flex-col gap-12 lg:flex-row px-5 py-10 pb-10 md:py-[104px] lg:gap-20 lg:px-10">
+				<div className="mx-auto flex w-full max-w-[1200px] flex-col gap-6 lg:flex-row px-5 py-10 pb-10 md:py-[104px] lg:gap-20 lg:px-10">
 					<img
-						className="mx-auto h-auto w-full sm:w-1/2 lg:order-1 order-2"
+						className="mx-auto h-auto w-full sm:w-1/2"
 						src="/Group 324.svg"
 						alt=""
 					/>
 
-					<div className="flex items-center lg:max-w-[520px] lg:order-2">
+					<div className="flex items-center ">
 						<div className="space-y-6 text-[#393F48]">
-							<h2 className="text-[30px] font-bold text-[#0B0F15] md:text-[40px]">
+							<h2 className="text-[32px] font-bold text-[#0B0F15] md:text-[40px]">
 								BoomSquad Lore
 							</h2>
 
@@ -37,8 +37,8 @@ function HomePage() {
 			</div>
 
 			<div className="bg-white">
-				<div className="mx-auto space-y-8  w-full max-w-[1200px] px-5 py-10 pb-10 md:py-[104px] lg:gap-20 lg:px-10 border border-red-500">
-					<div className="border max-w-[544px]">
+				<div className="mx-auto space-y-8 w-full max-w-[1200px] px-5 py-10 pb-10 md:py-[104px] lg:px-10">
+					<div>
 						<span className="text-[#393F48] md:text-[24px] font-normal">
 							Core Features
 						</span>
@@ -47,61 +47,64 @@ function HomePage() {
 						</h2>
 					</div>
 
-					<div className="flex gap-8">
-						<div className="space-y-8 max-w-[544px] w-full mx-auto">
-							<div>
-								<img src="/Frame 327.svg" alt="" />
-								<div className="space-y-4 rounded-[4px] bg-[#FFFADA] p-10">
-									<h3>Dynamic Minting Linked to DEX</h3>
-									<p>
-										BOOM can be minted continuously until the fixed supply cap
-										is reached, ensuring scarcity and long-term value
-										preservation. Each mint price is automatically pegged to the
-										real-time BOOM/XLM exchange rate on the Stellar DEX.
-									</p>
-								</div>
-							</div>
-
-							<div>
-								<img src="/Frame 329.svg" alt="" />
-								<div className="space-y-4 rounded-[4px] bg-[#FFFADA] p-10">
-									<h3>Community Governance</h3>
-									<p>
-										BOOM doubles as voting power, giving holders a direct voice
-										in the ecosystem. From treasury spending, protocol upgrades,
-										community campaigns and even proposals can be created by any
-										holder with a minimum stake.
-									</p>
-								</div>
+					<div className="grid grid-cols-1 md:auto-rows-min md:grid-cols-2 gap-8">
+						<div className="max-w-[544px] w-full mx-auto">
+							<img src="/Frame 327.svg" alt="" />
+							<div className="space-y-4 rounded-[4px] bg-[#FFFADA] px-4 pt-6 pb-8">
+								<h3 className="text-[24px] lg:text-[28px] text-[#0B0F15] font-bold">
+									Dynamic Minting Linked to DEX
+								</h3>
+								<p className="text-[#393F48] lg:text-[18px] font-normal">
+									BOOM can be minted continuously until the fixed supply cap is
+									reached, ensuring scarcity and long-term value preservation.
+									Each mint price is automatically pegged to the real-time
+									BOOM/XLM exchange rate on the Stellar DEX.
+								</p>
 							</div>
 						</div>
 
-						<div className="space-y-8 max-w-[544px] w-full mx-auto">
-							<div>
-								<img src="/Frame 327 (1).svg" alt="" />
-								<div className="space-y-4 rounded-[4px] bg-[#FFFADA] p-10">
-									<h3>Burn Now, Flex Later</h3>
-									<p>
-										You can voluntarily burn BOOM tokens into a smart contract
-										vault and after a fixed vesting period, reclaim them with
-										bonus rewards which increases scarcity and incentivizes
-										loyalty by rewarding long-term holders.
-									</p>
-								</div>
+						<div className="max-w-[544px] w-full mx-auto">
+							<img src="/Frame 329.svg" alt="" />
+							<div className="space-y-4 rounded-[4px] bg-[#FFFADA] px-4 pt-6 pb-8">
+								<h3 className="text-[24px] lg:text-[28px] text-[#0B0F15] font-bold">
+									Community Governance
+								</h3>
+								<p className="text-[#393F48] lg:text-[18px] font-normal">
+									BOOM doubles as voting power, giving holders a direct voice in
+									the ecosystem. From treasury spending, protocol upgrades,
+									community campaigns and even proposals can be created by any
+									holder with a minimum stake.
+								</p>
 							</div>
+						</div>
 
-							<div>
-								<img className="h-auto" src="/Frame 329.svg" alt="" />
-								<div className="space-y-4 rounded-[4px] bg-[#FFFADA] p-10">
-									<h3>Real-Time Liquidity & Security</h3>
-									<p>
-										Every mint automatically adds liquidity to the BOOM/XLM
-										pool, with LP tokens permanently burned so liquidity can
-										never be withdrawn which guarantees a fair trading
-										environment, rug-pull risk elimination and a trustless DEX
-										listing.
-									</p>
-								</div>
+						<div className="max-w-[544px] w-full mx-auto">
+							<img src="/Frame 327 (1).svg" alt="" />
+							<div className="space-y-4 rounded-[4px] bg-[#FFFADA] px-4 pt-6 pb-8">
+								<h3 className="text-[24px] lg:text-[28px] text-[#0B0F15] font-bold">
+									Burn Now, Flex Later
+								</h3>
+								<p className="text-[#393F48] lg:text-[18px] font-normal">
+									You can voluntarily burn BOOM tokens into a smart contract
+									vault and after a fixed vesting period, reclaim them with
+									bonus rewards which increases scarcity and incentivizes
+									loyalty by rewarding long-term holders.
+								</p>
+							</div>
+						</div>
+
+						<div className="max-w-[544px] w-full mx-auto">
+							<img className="h-auto" src="/Frame 329.svg" alt="" />
+							<div className="space-y-4 rounded-[4px] bg-[#FFFADA] px-4 pt-6 pb-8">
+								<h3 className="text-[24px] lg:text-[28px] text-[#0B0F15] font-bold">
+									Real-Time Liquidity & Security
+								</h3>
+								<p className="text-[#393F48] lg:text-[18px] font-normal">
+									Every mint automatically adds liquidity to the BOOM/XLM pool,
+									with LP tokens permanently burned so liquidity can never be
+									withdrawn which guarantees a fair trading environment,
+									rug-pull risk elimination and a trustless DEX listing.
+								</p>
 							</div>
 						</div>
 					</div>

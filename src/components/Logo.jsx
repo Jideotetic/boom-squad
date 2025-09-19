@@ -9,7 +9,7 @@ function Logo() {
 					top: 0,
 				});
 			}}
-			className="text-[22px] font-black text-[#060708]"
+			className="text-[18px] sm:text-[22px] font-black text-[#060708]"
 		>
 			BOOM.Squad
 		</Link>
