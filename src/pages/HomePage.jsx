@@ -1,4 +1,28 @@
 import Hero from "@/components/Hero";
+import { Button } from "@/components/ui/button";
+
+const STEPS = [
+	{
+		title: "Connect Wallet",
+		description: "Securely link your funded crypto wallet to get started.",
+		icon: "/Group 313.svg",
+	},
+	{
+		title: "Enter BOOM Amount",
+		description: "Decide how many BOOM tokens you want to mint in one go",
+		icon: "/Group 319.svg",
+	},
+	{
+		title: "Check Price Peg",
+		description: "Mint price auto-follows live BOOM/XLM on Stellar DEX",
+		icon: "/Group 318.svg",
+	},
+	{
+		title: "Confirm & Chill",
+		description: "BOOM shows up instantly in your Stellar wallet.",
+		icon: "/Group 320.svg",
+	},
+];
 
 function HomePage() {
 	return (
@@ -112,33 +136,45 @@ function HomePage() {
 			</div>
 
 			<div className="bg-white">
-				<div className="mx-auto flex w-full max-w-[1200px] flex-col gap-12 lg:flex-row px-5 py-10 pb-10 md:py-[104px] lg:gap-20 lg:px-10">
-					<img
-						className="mx-auto h-auto w-full sm:w-1/2 lg:order-1 order-2 lg:w-full"
-						src="/Group 324.svg"
-						alt=""
-					/>
+				<div className="mx-auto space-y-8 w-full max-w-[1200px] px-5 py-10 pb-10 md:py-[104px] lg:px-10">
+					<h2 className="text-[30px] text-center md:text-[40px] text-[#0B0F15] font-bold">
+						Mint It Like It's Hot
+					</h2>
 
-					<div className="flex items-center lg:max-w-[520px] lg:order-2">
-						<div className="space-y-6 text-[#393F48]">
-							<h2 className="text-[30px] font-bold text-[#0B0F15] md:text-[40px]">
-								BoomSquad Lore
-							</h2>
+					<div className="flex flex-col items-center justify-center gap-10 lg:flex-row">
+						{STEPS.map((step, i) => (
+							<div
+								key={i}
+								className="flex relative gap-4 lg:flex-col items-center max-w-[335px]"
+							>
+								{/* Icon */}
+								<div className="relative z-10">
+									<img src={step.icon} alt="" />
+								</div>
 
-							<p className="text-[18px] font-normal md:text-[20px]">
-								BoomSquad (BOOM) is a community-driven token on Stellar Soroban
-								designed to reward participation, enhance engagement, and secure
-								long-term sustainability.
-							</p>
+								{i !== STEPS.length - 1 && (
+									<div className="absolute left-[20px] top-full mt-2 h-10 w-[2px] bg-[#EAC506] lg:left-full lg:top-[28px] lg:mt-0 lg:h-[2px] lg:w-1/3" />
+								)}
 
-							<p className="text-[18px] font-normal md:text-[20px]">
-								Unlike traditional tokens, BOOM integrates real-time DEX
-								pricing, auto-liquidity, burn-to-earn incentives, and community
-								voting. The result is a token economy where value grows with the
-								community and trust is locked in liquidity forever.
-							</p>
-						</div>
+								<div className="space-y-3">
+									<div className="text-[20px] font-bold text-[#0B0F15] lg:text-center">
+										{step.title}
+									</div>
+									<div className="text-[#2B3646] font-normal lg:text-center">
+										{step.description}
+									</div>
+								</div>
+							</div>
+						))}
 					</div>
+
+					<Button
+						size="lg"
+						className="bg-[#FDDA24] text-[#060708] mx-auto block"
+						variant="secondary"
+					>
+						Mint Boom
+					</Button>
 				</div>
 			</div>
 
