@@ -180,7 +180,7 @@ function HomePage() {
 
 			<div className="bg-white">
 				<div className="mx-auto flex w-full max-w-[1200px] flex-col gap-6 md:flex-row px-5 py-10 pb-10 md:py-[104px] lg:px-10">
-					<div className="md:mx-0 w-full sm:w-1/2 space-y-5 mx-auto md:flex-1 md:order-2">
+					<div className="md:mx-0 w-full space-y-5 mx-auto md:flex-1 md:order-2">
 						<h2 className="text-[30px] font-bold text-[#0B0F15] md:text-[40px]">
 							Tokenomics
 						</h2>
@@ -225,7 +225,7 @@ function HomePage() {
 					</div>
 
 					<img
-						className="mx-auto md:mx-0 h-auto w-full sm:w-1/2"
+						className="mx-auto md:mx-0 h-auto w-full md:w-1/2"
 						src="/Group 307.svg"
 						alt=""
 					/>
