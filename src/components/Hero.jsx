@@ -2,7 +2,7 @@ import { BsPatchCheckFill } from "react-icons/bs";
 
 function Hero() {
 	return (
-		<div className="bg-linear-to-b from-white via-[#FFFADF] to-[#FCEC9C] py-30">
+		<div className="bg-linear-to-b from-white via-[#FFFADF] to-white py-45">
 			<div className="mx-auto w-full max-w-[1200px] space-y-14 px-5">
 				<div className="space-y-12">
 					<div className="space-y-8 text-center text-[#1C1C1E]">
